@@ -115,7 +115,7 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN       PA2   // PWM pin
-//#define HEATER_1_PIN       PA3   // PWM pin
+#define HEATER_1_PIN       PA3   // PWM pin
 #define HEATER_BED_PIN     PA1   // PWM pin
 
 #define FAN_PIN            PE9   // PWM pin, Part cooling fan
@@ -147,7 +147,7 @@
 // #define BTN_EN2            PC5
 // #define BTN_ENC            PC3
 
-#define ADC_KEYPAD_PIN     PB0
+#define ADC_KEYPAD_PIN     PA4
 
 //
 // Filament runout detection
