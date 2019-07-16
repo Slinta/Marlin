@@ -24,7 +24,7 @@
 
 // Pin lists 1.1.x and 2.0.x synchronized 2018-02-17
 
-#line 31 // set __LINE__ to a known value for both passes
+#line 28 // set __LINE__ to a known value for both passes
 
 //
 // Analog Pin Assignments
@@ -1159,4 +1159,16 @@
 #endif
 #if PIN_EXISTS(FET_SAFETY)
   REPORT_NAME_DIGITAL(__LINE__, FET_SAFETY_PIN)
+#endif
+#if PIN_EXISTS(TOUCH_MISO)
+  REPORT_NAME_DIGITAL(__LINE__, TOUCH_MISO_PIN)
+#endif
+#if PIN_EXISTS(TOUCH_MOSI)
+  REPORT_NAME_DIGITAL(__LINE__, TOUCH_MOSI_PIN)
+#endif
+#if PIN_EXISTS(TOUCH_SCK)
+  REPORT_NAME_DIGITAL(__LINE__, TOUCH_SCK_PIN)
+#endif
+#if PIN_EXISTS(TOUCH_CS)
+  REPORT_NAME_DIGITAL(__LINE__, TOUCH_CS_PIN)
 #endif
