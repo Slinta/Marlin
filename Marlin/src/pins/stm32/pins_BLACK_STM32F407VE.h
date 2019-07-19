@@ -54,23 +54,23 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN          PC13
+#define X_MIN_PIN          PD12
 #define X_MAX_PIN          PA15
 #define Y_MIN_PIN          PA5
-#define Y_MAX_PIN          PD12
 #define Z_MIN_PIN          PD14
 #define Z_MAX_PIN          PD15
 
 //
 // Steppers
 //
-#define X_STEP_PIN         PC4
-#define X_DIR_PIN          PA4
-#define X_ENABLE_PIN       PE7
+#define X_STEP_PIN       PA0
+#define X_DIR_PIN        PA4
+#define X_ENABLE_PIN     PE6
+#define X_CS_PIN         PC13
 
 #define Y_STEP_PIN         PE5
 #define Y_DIR_PIN          PE2
-#define Y_ENABLE_PIN       PE6
+#define Y_ENABLE_PIN       PE0
 
 #define Z_STEP_PIN         PD5
 #define Z_DIR_PIN          PD3
@@ -80,9 +80,6 @@
 #define E0_DIR_PIN         PD0
 #define E0_ENABLE_PIN      PB9
 
-#define E1_STEP_PIN        PE0
-#define E1_DIR_PIN         PE1
-#define E1_ENABLE_PIN      PB8
 
 //
 // Temperature Sensors
@@ -125,9 +122,6 @@
 #define LCD_PINS_D5        PE12
 #define LCD_PINS_D6        PD1
 #define LCD_PINS_D7        PE8
-#define BTN_ENC            PD9
-#define BTN_EN1            PD4
-#define BTN_EN2            PD13
-
+#define ADC_KEYPAD_PIN     PA7
 #define DOGLCD_CS          LCD_PINS_D5
 #define DOGLCD_A0          LCD_PINS_D6

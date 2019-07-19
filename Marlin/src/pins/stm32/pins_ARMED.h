@@ -67,10 +67,10 @@
   #define X_ENABLE_PIN     PE3
   #define X_CS_PIN         PE5
 #else
-  #define X_STEP_PIN       PD3
-  #define X_DIR_PIN        PD2
-  #define X_ENABLE_PIN     PD0
-  #define X_CS_PIN         PB10
+  #define X_STEP_PIN       PA0
+  #define X_DIR_PIN        PA4
+  #define X_ENABLE_PIN     PE6
+  #define X_CS_PIN         PC13
 #endif
 
 #define Y_STEP_PIN         PE11
@@ -93,23 +93,12 @@
   #define E0_ENABLE_PIN    PB3
 #endif
 
-#ifdef ARMED_SWAP_X_E1
-  #define E1_STEP_PIN      PD3
-  #define E1_DIR_PIN       PD2
-  #define E1_ENABLE_PIN    PD0
-  #define E1_CS_PIN        PB10
-#else
-  #define E1_STEP_PIN      PE4
-  #define E1_DIR_PIN       PE2
-  #define E1_ENABLE_PIN    PE3
-  #define E1_CS_PIN        PE5
-#endif
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN         PA4   // Analog Input
-#define TEMP_1_PIN         PC1   // Analog Input
+#define TEMP_0_PIN         PC0   // Analog Input
+//#define TEMP_1_PIN         PC1   // Analog Input
 #define TEMP_BED_PIN       PC2   // Analog Input/
 
 //
@@ -117,7 +106,7 @@
 //
 #define HEATER_0_PIN       PA1   // Hardware PWM
 #define HEATER_1_PIN       PA2   // Hardware PWM
-#define HEATER_BED_PIN     PA0   // Hardware PWM
+//#define HEATER_BED_PIN     PA0   // Hardware PWM
 
 #define FAN_PIN            PC6   // Hardware PWM, Part cooling fan
 #define FAN1_PIN           PC7   // Hardware PWM, Extruder fan
@@ -126,8 +115,8 @@
 //
 // Misc functions
 //
-#define SDSS               PE7
-#define LED_PIN            PB7   // Heart beat
+#define SDSS               PE4
+//#define LED_PIN            PA7   // Heart beat
 #define PS_ON_PIN          PA10
 #define KILL_PIN           PA8
 
@@ -142,7 +131,7 @@
 #define LCD_PINS_D5        PE12
 #define LCD_PINS_D6        PD1
 #define LCD_PINS_D7        PE8
-#define ADC_KEYPAD_PIN        PC0   
+#define ADC_KEYPAD_PIN        PC1   
 //#define BTN_EN1            PC4
 //#define BTN_EN2            PC5
 //#define BTN_ENC            PC3
